@@ -1,17 +1,17 @@
-import React from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
-import { Car } from 'lucide-react';
-import { SearchPage } from './pages/SearchPage';
-import { RegisterPage } from './pages/RegisterPage';
+//import React from 'react';
+import { Routes, Route, Link } from "react-router-dom";
+import { Car } from "lucide-react";
+import { SearchPage } from "./pages/SearchPage";
+import { RegisterPage } from "./pages/RegisterPage";
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-50">
       <header className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+        <div className="px-4 py-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <Car className="h-8 w-8 text-blue-600" />
+              <Car className="w-8 h-8 text-blue-600" />
               <h1 className="ml-3 text-2xl font-bold text-gray-900">
                 Scottish Driving Instructors
               </h1>
@@ -21,7 +21,7 @@ function App() {
                 <li>
                   <Link
                     to="/"
-                    className="text-gray-600 hover:text-blue-600 transition-colors"
+                    className="text-gray-600 transition-colors hover:text-blue-600"
                   >
                     Find Instructor
                   </Link>
@@ -29,7 +29,7 @@ function App() {
                 <li>
                   <Link
                     to="/register"
-                    className="text-gray-600 hover:text-blue-600 transition-colors"
+                    className="text-gray-600 transition-colors hover:text-blue-600"
                   >
                     Register as Instructor
                   </Link>
@@ -45,8 +45,8 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
       </Routes>
 
-      <footer className="bg-gray-800 text-white mt-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+      <footer className="mt-12 text-white bg-gray-800">
+        <div className="px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <p className="text-center text-gray-400">
             © 2025 Scottish Driving Instructors Directory. All rights reserved.
           </p>
