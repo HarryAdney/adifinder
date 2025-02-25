@@ -13,7 +13,7 @@ function App() {
             <div className="flex items-center">
               <Car className="w-8 h-8 text-blue-600" />
               <h1 className="ml-3 text-2xl font-bold text-gray-900">
-                Scottish Driving Instructors
+                Driving Instructor Directory
               </h1>
             </div>
             <nav>
@@ -48,7 +48,7 @@ function App() {
       <footer className="mt-12 text-white bg-gray-800">
         <div className="px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <p className="text-center text-gray-400">
-            © 2025 Scottish Driving Instructors Directory. All rights reserved.
+            © Copyright 2025 HarryAdney Web Design. All rights reserved.
           </p>
         </div>
       </footer>
