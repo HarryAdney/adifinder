@@ -6,7 +6,7 @@ import { RegisterPage } from "./pages/RegisterPage";
 
 function App() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="flex flex-col min-h-screen bg-gray-50">
       <header className="bg-white shadow-sm">
         <div className="px-4 py-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
@@ -38,6 +38,11 @@ function App() {
             </nav>
           </div>
         </div>
+        <img
+          src="adifinder-header.webp"
+          alt="Driving Instructor"
+          className="w-full h-auto"
+        />
       </header>
 
       <Routes>
@@ -45,7 +50,7 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
       </Routes>
 
-      <footer className="mt-12 text-white bg-gray-800" sticky bottom-0>
+      <footer className="w-full mt-auto text-white bg-gray-800">
         <div className="px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <p className="text-center text-gray-400">
             © Copyright 2025 HarryAdney Web Design. All rights reserved.
