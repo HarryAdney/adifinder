@@ -13,7 +13,7 @@ function App() {
             <div className="flex items-center">
               <Car className="w-8 h-8 text-blue-600" />
               <h1 className="ml-3 text-2xl font-bold text-gray-900">
-                Driving Instructor Directory
+                ADI Finder
               </h1>
             </div>
             <nav>
@@ -23,7 +23,7 @@ function App() {
                     to="/"
                     className="text-gray-600 transition-colors hover:text-blue-600"
                   >
-                    Find Instructor
+                    Find an Instructor
                   </Link>
                 </li>
                 <li>
@@ -31,7 +31,7 @@ function App() {
                     to="/register"
                     className="text-gray-600 transition-colors hover:text-blue-600"
                   >
-                    Register as Instructor
+                    Register as an Instructor
                   </Link>
                 </li>
               </ul>
