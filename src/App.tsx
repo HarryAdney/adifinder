@@ -13,7 +13,7 @@ function App() {
             <div className="flex items-center">
               <Car className="w-8 h-8 text-blue-600" />
               <h1 className="ml-3 text-2xl font-bold text-gray-900">
-                ADI Finder 15:46
+                ADI Finder
               </h1>
             </div>
             <nav>
@@ -45,7 +45,7 @@ function App() {
         <Route path="/register" element={<RegisterPage />} />
       </Routes>
 
-      <footer className="mt-12 text-white bg-gray-800">
+      <footer className="mt-12 text-white bg-gray-800" sticky bottom-0>
         <div className="px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <p className="text-center text-gray-400">
             © Copyright 2025 HarryAdney Web Design. All rights reserved.
