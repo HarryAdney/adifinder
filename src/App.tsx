@@ -13,7 +13,7 @@ function App() {
             <div className="flex items-center">
               <Car className="w-8 h-8 text-blue-600" />
               <h1 className="ml-3 text-2xl font-bold text-gray-900">
-                ADI Finder
+                ADI Finder 15:46
               </h1>
             </div>
             <nav>
