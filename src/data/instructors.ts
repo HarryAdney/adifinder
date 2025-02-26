@@ -9,7 +9,8 @@ export const instructors: Instructor[] = [
     reviews: 127,
     price: 35,
     image: 'https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e',
-    experience: 12
+    experience: 12,
+    phone: '123-456-7890' // Added phone number
   },
   {
     id: '2',
@@ -19,7 +20,8 @@ export const instructors: Instructor[] = [
     reviews: 98,
     price: 32,
     image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a',
-    experience: 8
+    experience: 8,
+    phone: '234-567-8901' // Added phone number
   },
   {
     id: '3',
@@ -29,6 +31,7 @@ export const instructors: Instructor[] = [
     reviews: 156,
     price: 30,
     image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956',
-    experience: 15
+    experience: 15,
+    phone: '345-678-9012' // Added phone number
   }
 ];

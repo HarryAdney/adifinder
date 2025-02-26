@@ -44,15 +44,15 @@ export function SearchPage() {
       console.log("Found instructors:", data);
 
       // Transform the data to match our Instructor interface
-      const transformedData: Instructor[] = (data || []).map((instructor) => ({
+      const transformedData: Instructor[] = (data || []).map((instructor: { id: string; name: string; postcode: string; hourly_rate: number; experience: number; phone: string; }) => ({
         id: instructor.id,
         name: instructor.name,
         postcode: instructor.postcode,
         rating: 5.0, // Default rating for new instructors
         reviews: 0, // Default reviews for new instructors
         price: instructor.hourly_rate,
-        // image: `https://source.unsplash.com/featured/?driving,instructor&sig=${instructor.id}`, // Random instructor image
         experience: instructor.experience,
+        phone: instructor.phone, // Added phone number
       }));
 
       setInstructors(transformedData);

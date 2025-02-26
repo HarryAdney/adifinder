@@ -7,6 +7,7 @@ export interface Instructor {
   price: number;
   image: string;
   experience: number;
+  phone: string; // Added phone property
 }
 
 export interface InstructorFormData {
