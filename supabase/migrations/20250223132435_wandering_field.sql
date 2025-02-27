@@ -25,22 +25,24 @@ RETURNS TABLE (
   postcode text,
   experience integer,
   hourly_rate integer,
+  phone text,  -- Added phone number
   distance decimal
 ) AS $$
 BEGIN
   RETURN QUERY
-  SELECT 
+  SELECT
     i.id,
     i.name,
     i.postcode,
     i.experience,
     i.hourly_rate,
+    i.phone,  -- Added phone number to the select statement
     calculate_distance(search_lat, search_lon, i.latitude, i.longitude) as distance
-  FROM 
+  FROM
     instructors i
-  WHERE 
+  WHERE
     calculate_distance(search_lat, search_lon, i.latitude, i.longitude) <= radius_miles
-  ORDER BY 
+  ORDER BY
     distance ASC;
 END;
 $$ LANGUAGE plpgsql;

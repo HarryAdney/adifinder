@@ -38,6 +38,11 @@ function App() {
             </nav>
           </div>
         </div>
+        <img
+          src="/adifinder-header.webp"
+          alt="Driving Instructor Header"
+          className="w-full h-auto"
+        />
       </header>
 
       <Routes>
