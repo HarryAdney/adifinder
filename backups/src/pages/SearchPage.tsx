@@ -44,7 +44,7 @@ export function SearchPage() {
       console.log("Found instructors:", data);
 
       // Transform the data to match our Instructor interface
-      const transformedData: Instructor[] = (data || []).map((instructor) => ({
+      const transformedData: Instructor[] = (data || []).map((instructor: { id: string; name: string; postcode: string; hourly_rate: number; experience: number; phone: string; }) => ({
         id: instructor.id,
         name: instructor.name,
         postcode: instructor.postcode,
@@ -52,8 +52,7 @@ export function SearchPage() {
         reviews: 0, // Default reviews for new instructors
         price: instructor.hourly_rate,
         experience: instructor.experience,
-        image: '', // We're not using images anymore
-        phone: instructor.phone || 'Not provided', // Add phone with fallback
+        phone: instructor.phone, // Added phone number
       }));
 
       setInstructors(transformedData);

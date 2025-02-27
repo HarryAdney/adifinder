@@ -1,3 +1,4 @@
+//import React from 'react';
 import { Routes, Route, Link } from "react-router-dom";
 import { Car } from "lucide-react";
 import { SearchPage } from "./pages/SearchPage";
@@ -37,13 +38,11 @@ function App() {
             </nav>
           </div>
         </div>
-        <div className="w-full overflow-hidden">
-          <img
-            src="https://fwepzlulkryjrzshlfnl.supabase.co/storage/v1/object/public/images//adifinder-header.webp"
-            alt="Driving Instructor Header"
-            className="object-cover w-full h-auto"
-          />
-        </div>
+        <img
+          src="/adifinder-header.webp"
+          alt="Driving Instructor Header"
+          className="w-full h-auto"
+        />
       </header>
 
       <Routes>

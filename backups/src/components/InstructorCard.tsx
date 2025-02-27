@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, Clock, PoundSterling, Phone } from 'lucide-react';
+import { Star, Clock, PoundSterling } from 'lucide-react';
 import { Instructor } from '../types';
 
 interface InstructorCardProps {
@@ -9,6 +9,13 @@ interface InstructorCardProps {
 export function InstructorCard({ instructor }: InstructorCardProps) {
   return (
     <div className="overflow-hidden bg-white rounded-lg shadow-md">
+      <div className="aspect-w-16 aspect-h-9">
+        <img
+          src={instructor.image}
+          alt={instructor.name}
+          className="object-cover w-full h-48"
+        />
+      </div>
       <div className="p-4">
         <h3 className="text-lg font-semibold text-gray-900">{instructor.name}</h3>
         <div className="flex items-center mt-2">
@@ -27,8 +34,8 @@ export function InstructorCard({ instructor }: InstructorCardProps) {
             <span>£{instructor.price}/hour</span>
           </div>
           <div className="flex items-center text-sm text-gray-600">
-            <Phone className="w-4 h-4 mr-2" />
-            <span>{instructor.phone}</span>
+            <span className="mr-2">Phone:</span>
+            <span>{instructor.phone}</span> {/* Displaying phone number */}
           </div>
         </div>
         <button className="w-full px-4 py-2 mt-4 text-white transition-colors bg-green-600 rounded-md hover:bg-green-700">
