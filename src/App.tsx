@@ -53,8 +53,8 @@ function App() {
       <footer className="mt-12 text-white bg-gray-800">
         <div className="px-4 py-8 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <p className="text-center text-gray-400">
-            © Copyright 2025 HarryAdney Web Design. All rights reserved.
-            Updated18:43
+            © Copyright 2025 HarryAdney Web Design. All rights reserved. Updated
+            27 02 2025 14:39
           </p>
         </div>
       </footer>
